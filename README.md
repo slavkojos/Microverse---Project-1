@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Microverse Day1
+# Microverse Week 1 HTML/CSS project
 
 
 
