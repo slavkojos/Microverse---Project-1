@@ -43,6 +43,11 @@ header {
   margin: 5px 50px;  
 }
 
+.left-align {
+  display: flex;
+  align-items: center;
+}
+
 
 .top-icons {
   margin: 0px 15px;
@@ -60,6 +65,7 @@ header {
 
 .header-title:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .top-buttons {  
