@@ -6,6 +6,12 @@
 }
 
 @font-face {
+  font-family: "nyt-cheltenham-italic";
+  src: url(fonts/cheltenham-italic-700.f99a0459024509f157a3352e5de4f873.woff2);
+}
+
+
+@font-face {
   font-family: "nyt-imperial";
   src: url(fonts/imperial-normal-400.2531995fefd3b997f9c4d564ebe89268.woff2);
 }
@@ -16,9 +22,8 @@
 }
 
 body {
-  font-family: "nyt-imperial", sans-serif;
+  font-family: "nyt-imperial", sans-serif;  
 }
-
 
 
 
@@ -37,9 +42,15 @@ body {
 
 header {
   display: flex;
-  margin: 5px auto;
-  justify-content: space-between ;
-  width:85vw;
+  position:fixed;
+  margin: 0px auto 5px auto;
+  top:0;
+  justify-content: space-around;
+  align-items: center;
+  width:100%;
+  background-color: white;
+  border-bottom: 0.5px solid lightgray;
+  
 }
 
 
@@ -51,6 +62,7 @@ header {
 
 .left-align {
   display: flex;
+  float: left;
   align-items: center;
 }
 
@@ -66,7 +78,7 @@ header {
 .header-title {
   font-size: 14px;
   font-family: "nyt-franklin", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .header-title:hover {
@@ -95,12 +107,59 @@ header {
 	
 }
 
-.under-header , .short-hr {
+.under-header , .short-hr, .under-title {
   height:0.5px;
   border-width:0;
   color:lightgray;
   background-color:lightgray;
 }
+
+/*********************************************************************TITLE*************************************************************************/
+
+.title-container {
+  margin: 20px auto;
+  width: 30%; 
+}
+
+.title-container > h1 {
+  font-family: "nyt-cheltenham-italic";
+  text-align: left;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 3rem;
+  margin: 50px 0 30px 0;
+  
+}
+.under-title {
+  padding: 0.01%;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons > i  {
+  text-align: left;
+  color:black;
+  border-color: blue;
+  border-radius: 200px;
+  height:50px;
+  width:50px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.image-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title-image , .img-description{
+  width: 65%;
+
+}
+
+
 
 /********************************************************************** ARTICLE *********************************************************************/
 
@@ -155,4 +214,23 @@ article > p,h4 {
   margin: 15px auto;
   width: 30%;
   padding:0.1%;
+}
+
+
+/****************************************************************IMAGE GRID *****************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+/********************************************************************TEMP*****************************************************************************/
+
+.telescope-image {
+  width: 30%;
 }
