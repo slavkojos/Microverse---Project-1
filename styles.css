@@ -1,3 +1,94 @@
-body {
-    font-family: 'Playfair Display', serif;
+/* FONTS */
+
+@font-face {
+  font-family: "nyt-cheltenham";
+  src: url(fonts/cheltenham-normal-400.a3ed7afe3eaa0a873f3fbd379f8c491b.woff2);
 }
+
+@font-face {
+  font-family: "nyt-imperial";
+  src: url(fonts/imperial-normal-400.2531995fefd3b997f9c4d564ebe89268.woff2);
+}
+
+@font-face {
+  font-family: "nyt-franklin";
+  src: url(fonts/franklin-normal-700.b44c88f09ca7ce914b836d4ae72891b8.woff2);
+}
+
+
+
+
+/* CSS RESET */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+body {
+  font-family: "nyt-imperial", sans-serif;
+}
+
+header {
+  display: flex;
+  margin: 5px auto;
+  justify-content: space-between ;
+  width:85vw;
+}
+
+.top-logo {
+  width:200px;
+  margin: 5px 50px;  
+}
+
+
+.top-icons {
+  margin: 0px 15px;
+}
+
+.top-buttons {
+  margin: 0px 15px;
+}
+
+.header-title {
+  font-size: 14px;
+  font-family: "nyt-franklin", sans-serif;
+  font-weight: 500;
+}
+
+.header-title:hover {
+  text-decoration: underline;
+}
+
+.top-buttons {  
+	background:rgb(50, 104, 145);
+	background-color:rgb(86, 123, 149);
+	border-radius:4px;
+	border:1px solid #566963;
+	color: white;
+	font-family:Arial;
+	font-size:11px;
+	font-weight:bold;
+	padding:10px 15px;
+	text-decoration:none;
+  line-height: 11px;
+  margin:2px 5px;
+}
+.top-buttons:hover {
+  cursor:pointer;
+  background-color:rgb(28, 94, 145);
+	
+	
+}
+
+.under-header {
+  height:0.5px;
+  border-width:0;
+  color:lightgray;
+  background-color:lightgray;
+}
+
+
+
