@@ -34,7 +34,9 @@ body {
   margin: 0;
 }
 
-
+/* * {
+  border: 1px solid #f00 !important;
+} */
 
 
 
@@ -117,7 +119,7 @@ header {
 /*********************************************************************TITLE*************************************************************************/
 
 .title-container {
-  margin: 20px auto;
+  margin: 100px auto 5px auto;
   width: 30%; 
 }
 
@@ -131,7 +133,7 @@ header {
   
 }
 .under-title {
-  padding: 0.01%;
+  padding: 0.05%;
 }
 
 .social-icons {
@@ -149,15 +151,28 @@ header {
   margin-top: 5px;
 }
 
-.image-container {
-  margin: 0 auto;
+.title-image, .image-container , .img-description {
   text-align: center;
+  width: 80%;
+  margin: 20px auto;
 }
 
-.title-image , .img-description{
-  width: 65%;
+.img-description {
+  text-align: left;
+  color: gray;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  
+}
+
+.img-description > span {
+  color:lightgray;
+  font-size: 13px;
+  line-height: 18px;
 
 }
+
+
 
 
 
@@ -182,7 +197,7 @@ header {
 }
 article {
   max-width: 32%;
-  margin: 0 auto;
+  margin: 20px auto;
   font-family: "nyt-imperial", sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
@@ -192,6 +207,13 @@ article {
 
 article > p,h4 {
   padding-bottom: 20px;
+}
+
+article > h3 {
+  font-family: "nyt-imperial";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .unlock-more {
@@ -219,8 +241,51 @@ article > p,h4 {
 
 /****************************************************************IMAGE GRID *****************************************************************************/
 
+.img-grid-container {
+  width: 50%;
+  margin:20px auto;
+}
 
+.img-grid-title {
+  font-family: "nyt-cheltenham";
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+}
 
+.img-grid-description {
+  font-family: "nyt-cheltenham";
+  line-height: 18px;
+  color:#666;
+
+}
+
+.img-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
+  column-gap: 15px;
+  row-gap: 15px; 
+}
+
+.grid-pics {
+  width:200px;
+  height: 200px;
+}
+
+.grid-image-title {
+  font-family: "nyt-franklin";
+  font-weight: 800;
+  padding-right:10px;
+  font-size: 11px;
+}
+
+.grid-image-description {
+  font-family: "nyt-franklin";
+  font-weight: 300;
+  line-height: 17px;
+  font-size: 14px;
+}
 
 
 
