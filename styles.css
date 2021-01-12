@@ -1,3 +1,158 @@
+/****************************************************************** FONTS ***************************************************************************/
+
+@font-face {
+  font-family: "nyt-cheltenham";
+  src: url(fonts/cheltenham-normal-400.a3ed7afe3eaa0a873f3fbd379f8c491b.woff2);
+}
+
+@font-face {
+  font-family: "nyt-imperial";
+  src: url(fonts/imperial-normal-400.2531995fefd3b997f9c4d564ebe89268.woff2);
+}
+
+@font-face {
+  font-family: "nyt-franklin";
+  src: url(fonts/franklin-normal-500.d6c06a3d84a57100edad5bf9b84ff739.woff2);
+}
+
 body {
-    font-family: 'Playfair Display', serif;
+  font-family: "nyt-imperial", sans-serif;
+}
+
+
+
+
+
+/***************************************************************** CSS RESET **************************************************************************/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+
+/********************************************************************* HEADER ****************************************************************************/
+
+header {
+  display: flex;
+  margin: 5px auto;
+  justify-content: space-between ;
+  width:85vw;
+}
+
+
+
+.top-logo {
+  width:200px;
+  margin: 5px 50px;  
+}
+
+.left-align {
+  display: flex;
+  align-items: center;
+}
+
+
+.top-icons {
+  margin: 0px 15px;
+}
+
+.top-buttons {
+  margin: 0px 15px;
+}
+
+.header-title {
+  font-size: 14px;
+  font-family: "nyt-franklin", sans-serif;
+  font-weight: 500;
+}
+
+.header-title:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.top-buttons {  
+	background:rgb(50, 104, 145);
+	background-color:rgb(86, 123, 149);
+	border-radius:4px;
+	border:1px solid #566963;
+	color: white;
+	font-family:Arial;
+	font-size:11px;
+	font-weight:bold;
+	padding:10px 15px;
+	text-decoration:none;
+  line-height: 11px;
+  margin:2px 5px;
+}
+.top-buttons:hover {
+  cursor:pointer;
+  background-color:rgb(28, 94, 145);
+	
+	
+}
+
+.under-header , .short-hr {
+  height:0.5px;
+  border-width:0;
+  color:lightgray;
+  background-color:lightgray;
+}
+
+/********************************************************************** ARTICLE *********************************************************************/
+
+.author, .by-author {
+  font-family: "nyt-franklin";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.author {
+  text-decoration: underline;
+  text-decoration-color: lightgray;
+}
+
+.date {
+  font-family: "nyt-franklin";
+  font-weight: 100;
+  font-size: 0.8125rem;
+  margin:5px 0;
+}
+article {
+  max-width: 32%;
+  margin: 0 auto;
+  font-family: "nyt-imperial", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+
+}
+
+article > p,h4 {
+  padding-bottom: 20px;
+}
+
+.unlock-more {
+  text-align: center;
+  margin: 5px auto;
+  max-width: 40%;
+  font-weight: 700;
+  font-family: "nyt-franklin";
+  line-height: 19px;
+  font-size: 15px;
+  
+}
+
+.unlock-more > a {
+  text-decoration: none;
+  color: rgb(50, 104, 145);;
+}
+
+.short-hr {
+  margin: 15px auto;
+  width: 30%;
+  padding:0.1%;
 }
