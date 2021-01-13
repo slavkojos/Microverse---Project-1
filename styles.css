@@ -392,3 +392,85 @@ article > h3 {
   color:gray;
 }
 
+
+
+
+/***************************************************************************MORE GRID************************************************************************************************/
+
+.bottom-grid-container {
+  width:68%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 40px;
+
+}
+
+.more-in-space-grid-item {
+  display: flex;
+  flex-direction: column;
+  font-family: "nyt-cheltenham";
+  margin-bottom: 20px;
+}
+
+.more-in-space-grid-item > img {
+  width:272px;
+  height:182px;
+}
+
+.bottom-grid-title {
+  font-family: "nyt-franklin";
+  font-size:16px;
+  line-height: 22px;
+  font-weight: 700;
+  margin:20px 0px 5px 0px;
+}
+
+.bottom-leftside-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.more-in-space-grid-item > p , span {
+  white-space: nowrap;
+  text-align: end;
+  margin:0;
+  font-size:10px;
+}
+
+.more-in-space-grid-item > h5 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-weight: 500;
+}
+
+.more-in-space-grid-item > span {
+  font-family: "nyt-franklin";
+  text-align: left;
+  color:gray;
+  font-size: 12px;
+
+}
+
+.most-popular-container > h6 {
+  font-family: "nyt-cheltenham";
+  font-size: 1.1875rem;
+  line-height: 1.4375rem;
+  font-weight: 500;
+  margin: 10px 0 10px 0;  
+}
+
+.most-popular-container > hr {
+  height:1px;
+  border-width:0px;
+  color:lightgray;
+  background-color:lightgray;
+}
+
+
+
+
+
+
+
+
