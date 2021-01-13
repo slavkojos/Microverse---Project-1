@@ -266,6 +266,7 @@ article > h3 {
 
 }
 
+
 .img-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -398,7 +399,7 @@ article > h3 {
 /***************************************************************************MORE GRID************************************************************************************************/
 
 .bottom-grid-container {
-  width:68%;
+  width:66%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -431,17 +432,19 @@ article > h3 {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.more-in-space-grid-item > p , span {
+.more-in-space-grid-item > p {
   white-space: nowrap;
   text-align: end;
   margin:0;
   font-size:10px;
+
 }
 
 .more-in-space-grid-item > h5 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-weight: 500;
+  padding-right: 50px;
 }
 
 .more-in-space-grid-item > span {
@@ -466,6 +469,110 @@ article > h3 {
   color:lightgray;
   background-color:lightgray;
 }
+
+/************************************************************NAVIGATION****************************************************************/
+
+nav {
+  width: 66%;
+  margin: 50px auto;
+  font-family: "nyt-franklin"
+}
+
+.nyt-nav-logo {
+  width: 184px;
+  height: 25px;
+  margin:10px 0px 20px 0px;
+}
+
+.nav-grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin:20px 0 20px 0;
+}
+
+.nav-column {
+  height:400px;
+}
+
+.nav-column > a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  margin:8px 0px 8px 0px;
+  color: black;
+}
+.nav-column > a:hover {
+  text-decoration: underline;
+}
+
+.nav-column > h6 {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 700;
+  margin-bottom:5px;
+
+}
+
+.category-icons {
+  display: inline;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.category-links {
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  line-height: 15px !important;
+  margin:10px 0px 10px 0px !important;
+  
+}
+
+.last-column  {
+  border-left-style: solid;
+  border-width: 1px;
+  padding-left: 20px;
+  border-color: lightgray;
+
+}
+
+.last-column-hr , .bottom-of-nav-hr {
+  height:1px;
+  border-width:0;
+  color:lightgray;
+  background-color:lightgray;
+
+}
+
+
+
+
+
+/******************************************************FOOTER***************************************************************/
+
+
+.credits {
+  justify-content: space-around;
+  align-items: flex-start;
+  display: flex;
+  width: 70%;
+  margin: 5px auto 30px auto;
+  padding:0px 50px 0px 50px;
+}
+
+.credits > a {
+  font-family: "nyt-franklin";
+  font-size: 11px;
+  line-height: 11px;
+  color:gray;
+  text-decoration: none;
+}
+
+
+
+
 
 
 
