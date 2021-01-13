@@ -2,6 +2,10 @@
 
 # Microverse Week 1 HTML/CSS project
 
+You can access the website here:
+
+https://slavkojos.github.io/Microverse---Project-1/
+
 
 
 👤 Author:
